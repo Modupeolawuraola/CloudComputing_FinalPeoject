@@ -1,23 +1,23 @@
 ### Cloud-Computing- FinalProject
 
 ##### Project Topic:
-##### - Understanding Climate Risk: AWS Athena & QuickSight
+ - Understanding Climate Risk: AWS Athena & QuickSight
   
 ##### Project Description:
 - This Project involves Storing dataset in S3 and use AWS Athena to run SQL queries against it, Additionally using Quicksight for visulization.
 
 ##### Project Description Breakdown :
-##### - create a database on aws cloud, storing it on s3 bucket,
-##### - connect the s3 bucket to athena for data retrieval using sql and data analysis based metrics and KPI Definition,
-##### - creating a data visualization on the data using Quicksight.
-##### - services: Amazon S3, Amazon Athena, Amazon Quicksight.
+- create a database on aws cloud, storing it on s3 bucket,
+ - connect the s3 bucket to athena for data retrieval using sql and data analysis based metrics and KPI Definition,
+ - creating a data visualization on the data using Quicksight.
+ - services: Amazon S3, Amazon Athena, Amazon Quicksight.
 
 ##### Project Features: 
 
-##### This project focuses on conducting data analysis entirely within the AWS Cloud, leveraging its scalability and efficiency. Instead of using a local machine, we will utilize the following AWS services:
-##### - Amazon S3:  S3  bucket was used  to store and manage our dataset. This bucket will serve as the data lake where all raw data is ingested.
-##### - AWS Athena: To analyze the dataset stored in S3, we will use AWS Athena, a serverless query service that allows us to run SQL queries directly on the data. This approach eliminates the need for complex ETL processes or database management.
-##### - Amazon QuickSight: Once the data is processed and analyzed using Athena, we will use Amazon QuickSight to create interactive dashboards. This will allow us to visualize the insights derived from the data, making it easier to share and interpret our findings.
+ This project focuses on conducting data analysis entirely within the AWS Cloud, leveraging its scalability and efficiency. Instead of using a local machine, we will utilize the following AWS services:
+- Amazon S3:  S3  bucket was used  to store and manage our dataset. This bucket will serve as the data lake where all raw data is ingested.
+ - AWS Athena: To analyze the dataset stored in S3, we will use AWS Athena, a serverless query service that allows us to run SQL queries directly on the data. This approach eliminates the need for complex ETL processes or database management.
+ - Amazon QuickSight: Once the data is processed and analyzed using Athena, we will use Amazon QuickSight to create interactive dashboards. This will allow us to visualize the insights derived from the data, making it easier to share and interpret our findings.
 
 
 ##### Project Data Source 🏪: 
