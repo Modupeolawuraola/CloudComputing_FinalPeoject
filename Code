@@ -1,1 +1,120 @@
+Database: Data dictionary:
+
+Columns for locations:
+- STATE
+- STATEABBRV	
+- COUNTY	
+- COUNTYFIPS		
+- TRACT	
+- TRACTFIPS
+
+- WFIR_EALB, WFIR_EALP , WFIR_EALA , WFIR_EALT , COUNTY 
+
+-WFIR_RISKS	, WFIR_RISKR	
+
+
+1. What are the areas with the highest risk of wildfires?
+
+Code: 
+SELECT STATE
+FROM fema_nri_data 
+GROUP BY STATE
+HAVING AVG(WFIR_RISKS) > 75.00;
+
+
+SELECT COUNTY, STATE 
+FROM fema_nri_data 
+GROUP BY COUNTY,STATE
+HAVING AVG(WFIR_RISKS) > 75.00;
+
+
+SELECT TRACT, COUNTY, STATE 
+FROM fema_nri_data
+GROUP BY TRACT, COUNTY, STATE
+HAVING AVG(WFIR_RISKS) > 75.00;
+
+
+2. What are the areas with the greatest Expected Annual Loss due to wildfires?
+
+Code: 
+SELECT STATE, SUM(WFIR_EALT) AS Total
+FROM fema_nri_data
+GROUP BY STATE
+ORDER BY Total DESC
+LIMIT 10;
+
+SELECT COUNTY,STATE,SUM(WFIR_EALT) AS Total
+FROM fema_nri_data
+GROUP BY COUNTY, STATE
+ORDER BY Total DESC
+LIMIT 10;
+
+SELECT TRACT,STATE, SUM(WFIR_EALT) AS Total
+FROM fema_nri_data
+GROUP BY TRACT, STATE
+ORDER BY Total DESC
+LIMIT 100;
+
+
+3. How many counties are at risk of wildfires? 
+
+Code: 
+SELECT COUNT(DISTINCT county) AS counties_at_risk
+FROM fema_nri_data
+WHERE wfir_riskr IN ('High', 'Very High');
+
+
+4. Where are areas with the highest Expected Annual Loss for buildings impacted by wildfires?
+
+Code: 
+WFIR_EALB (buildings)
+ 
+SELECT STATE, COUNTY, SUM(WFIR_EALB) AS Total
+FROM fema_nri_data
+GROUP BY STATE, COUNTY
+ORDER BY Total DESC
+LIMIT 10;
+
+
+
+5. What are the most at risk areas in the US due to ALL climate events?
+
+Code: 
+RISK_SCORE (0-100)
+
+SELECT state, county, AVG(wfir_risks) AS total_wildfire_risk
+FROM fema_nri_data
+WHERE wfir_riskr IN ('Very High', 'High')
+GROUP BY state, county
+ORDER BY total_wildfire_risk DESC
+LIMIT 10;
+
+
+
+RISK_RATNG (Very High Relatively High Relatively Moderate Relatively Low Very Low) 
+
+Other: 
+
+How many wildfires: WFIR_EVNTS
+
+Code: 
+SELECT COUNT(WFIR_EVNTS) AS total_wildfires
+FROM fema_nri_data
+WHERE WFIR_EVNTS IS NOT NULL;
+
+
+
+CREATE TABLE athena_iceberg_table (
+    NRI_VER string,
+    AIANNHCE string
+LOCATION 's3://DOC_EXAMPLE_BUCKET/ice_warehouse/iceberg_db/athena_iceberg_table/'
+TBLPROPERTIES ( 
+    'table_type' ='ICEBERG'
+)
+
+
+
+
+—----
+
 
