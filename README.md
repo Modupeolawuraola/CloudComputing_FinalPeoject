@@ -1,4 +1,4 @@
-### Cloud-Computing_FinalProject
+### Cloud-Computing- FinalProject
 
 ##### Project Topic:
 - Understanding Climate Risk: AWS Athena & QuickSight
