@@ -12,6 +12,10 @@
 - creating a data visualization on the data using Quicksight.
 - services: Amazon S3, Amazon Athena, Amazon Quicksight.
 
+##### Project Data Source 🏪: 
+
+- https://hazards.fema.gov/nri/data-resources#csvDownload
+
 ##### Skill: 
 
 - Understand data storage, querying with SQL, and data analysis.
