@@ -12,9 +12,12 @@
 - creating a data visualization on the data using Quicksight.
 - services: Amazon S3, Amazon Athena, Amazon Quicksight.
 
-##### Skills/ Tech_Stack 💻 : 
+##### Skill: 
 
 - Understand data storage, querying with SQL, and data analysis.
+
+##### Tech_Stack 💻 :
+
 
 ##### Project Demo Video:
 
