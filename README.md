@@ -2,7 +2,8 @@
 
 ##### Project Topic:
 - Understanding Climate Risk: AWS Athena & QuickSight
-- Project Description:
+- 
+##### Project Description:
 - This Project involves Storing dataset in S3 and use AWS Athena to run SQL queries against it, Additionally using Quicksight for visulization.
 
 ##### Project Description Breakdown :
