@@ -12,6 +12,14 @@
 - creating a data visualization on the data using Quicksight.
 - services: Amazon S3, Amazon Athena, Amazon Quicksight.
 
+##### Project Features: 
+
+This project focuses on conducting data analysis entirely within the AWS Cloud, leveraging its scalability and efficiency. Instead of using a local machine, we will utilize the following AWS services:
+- Amazon S3:  S3  bucket was used  to store and manage our dataset. This bucket will serve as the data lake where all raw data is ingested.
+- AWS Athena: To analyze the dataset stored in S3, we will use AWS Athena, a serverless query service that allows us to run SQL queries directly on the data. This approach eliminates the need for complex ETL processes or database management.
+- Amazon QuickSight: Once the data is processed and analyzed using Athena, we will use Amazon QuickSight to create interactive dashboards. This will allow us to visualize the insights derived from the data, making it easier to share and interpret our findings.
+
+
 ##### Project Data Source 🏪: 
 
 - https://hazards.fema.gov/nri/data-resources#csvDownload
@@ -23,7 +31,6 @@
 ##### Tech_Stack 💻 :
 
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" alt="sql" height="40" style="vertical-align:top; margin:4px">  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png" alt="aws" height="40" style="vertical-align:top; margin:4px"> <img src="https://img.shields.io/badge/sql-orange" alt="sql" />  <img src="https://img.shields.io/badge/aws-quicksight-blue" alt="aws-quicksight" /> <img src="https://img.shields.io/badge/aws-athena-lightgreen" />  <img src="https://img.shields.io/badge/aws-s3-lightgreen"/> </p>
-
 
 
 ##### Project Demo Video:
