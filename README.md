@@ -47,6 +47,9 @@ Dashboard
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" alt="sql" height="40" style="vertical-align:top; margin:4px">  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png" alt="aws" height="40" style="vertical-align:top; margin:4px"> <img src="https://img.shields.io/badge/sql-orange" alt="sql" />  <img src="https://img.shields.io/badge/aws-quicksight-blue" alt="aws-quicksight" /> <img src="https://img.shields.io/badge/aws-athena-lightgreen" /> <img src="https://img.shields.io/badge/aws-s3-lightgreen"/> <img src="https://img.shields.io/badge/aws-Glue-orange"/> </p>
 
 
+##### Project Presentation:
+
+##### - https://drive.google.com/file/d/1Iy5HTGjj-kk4DJ4VwzUosuVyIq-0aCD1/view?usp=sharing
 
 
 ##### Project Demo Video:
